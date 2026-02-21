@@ -1,9 +1,15 @@
 # Personal Portfolio Website
 
 ## Project Overview
-A personal portfolio website to showcase professional experience, 
-achievements, projects, writing, speaking, and personal creative 
-pursuits including art and hobbies.
+A personal portfolio website for a product leader in fintech to 
+showcase professional experience, achievements, projects, writing, 
+speaking, and personal creative pursuits including art and hobbies.
+
+## Target Audience
+- Hiring managers and executive recruiters
+- Potential collaborators and partners
+- Speaking event organizers
+- Investors and fintech industry peers
 
 ## Site Sections
 1. **Hero** - Name, title, and a short personal tagline
@@ -17,11 +23,34 @@ pursuits including art and hobbies.
    and other creative pursuits
 8. **Contact** - Ways to get in touch
 
-## Design Preferences
-- Clean, modern, and professional aesthetic
-- Mobile-responsive and fast loading
-- Easy navigation between sections
-- Each section should feel distinct but cohesive
+## Design Direction
+- Dark mode with a deep charcoal or near-black base
+- Creative and tech-forward feel — innovative product leader, 
+  not traditional finance
+- Accent colors in electric blue or cyan
+- Subtle animations and smooth scroll transitions
+- Fade-in effects as sections come into view
+- Clean modern sans-serif typography for body text
+- More expressive font for headings
+- Geometric or abstract background elements that feel techy
+- Professional but with personality and creative energy
+- Fast loading — no unnecessary libraries or heavy frameworks
+
+## Tech Stack
+- HTML, CSS, and vanilla JavaScript
+- No frameworks or build steps
+- Easy to host on GitHub Pages, Netlify, or Vercel
+
+## Content Guidelines
+- Tone should be professional but personal and approachable
+- Writing & Speaking section should support links to 
+  external articles or event pages
+- Projects section should highlight outcomes and impact 
+  delivered, with numbers and metrics wherever possible
+- Creative Corner should feel warm and human — this is 
+  personality, not resume
+- Use placeholder content where personal details are not 
+  yet provided
 
 ## Coding Rules
 - Use semantic HTML throughout
@@ -31,21 +60,14 @@ pursuits including art and hobbies.
 - Comment complex logic clearly
 - Consistent naming conventions across all files
 
-## Content Guidelines
-- Tone should be professional but personal and approachable
-- Writing & Speaking section should support links to 
-  external articles or event pages
-- Projects section should highlight outcomes and impact, 
-  not just descriptions
-- Creative Corner should feel warm and human — this is 
-  personality, not resume
-
 ## Do Not Change Without Asking
 - Overall section structure and order
 - Design direction once approved
-- Any content I have provided about myself
+- Color palette once finalized
+- Any content provided about me
 - Contact information
 
 ## Future Considerations
 - May migrate hosting from GitHub Pages to a custom domain
 - Repo may be renamed when custom domain is set up
+- May add a blog or CMS integration later
