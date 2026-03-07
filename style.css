@@ -407,8 +407,7 @@ textarea   { resize: vertical; }
   );
   animation: spinRing 5s linear infinite;
   padding: 3px;
-  /* Clip the photo to the circle */
-  overflow: hidden;
+  overflow: hidden; /* clips the photo to the circular ring */
 }
 
 @keyframes spinRing {
@@ -1059,6 +1058,16 @@ textarea   { resize: vertical; }
   color: var(--text-muted);
   line-height: 1.65;
 }
+
+.creative-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: opacity var(--ease);
+}
+.creative-link:hover { opacity: 0.75; }
 
 /* Featured card — landscape layout at wider breakpoints */
 @media (min-width: 600px) {
