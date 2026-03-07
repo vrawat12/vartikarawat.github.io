@@ -407,6 +407,8 @@ textarea   { resize: vertical; }
   );
   animation: spinRing 5s linear infinite;
   padding: 3px;
+  /* Clip the photo to the circle */
+  overflow: hidden;
 }
 
 @keyframes spinRing {
