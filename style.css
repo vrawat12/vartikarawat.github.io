@@ -407,8 +407,7 @@ textarea   { resize: vertical; }
   );
   animation: spinRing 5s linear infinite;
   padding: 3px;
-  /* Clip the photo to the circle */
-  overflow: hidden;
+  overflow: hidden; /* clips the photo to the circular ring */
 }
 
 @keyframes spinRing {
@@ -513,7 +512,21 @@ textarea   { resize: vertical; }
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 48px;
+  gap: 40px;
+}
+
+.about-photo {
+  display: flex;
+  justify-content: center;
+}
+.about-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 32px var(--accent-glow);
 }
 
 .about-text p { color: var(--text-muted); margin-bottom: 18px; }
@@ -589,8 +602,11 @@ textarea   { resize: vertical; }
 
 @media (min-width: 768px) {
   .about-grid {
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 200px 1.2fr 1fr;
     align-items: start;
+  }
+  .about-photo {
+    padding-top: 8px;
   }
 }
 
@@ -930,6 +946,12 @@ textarea   { resize: vertical; }
   color: var(--text-muted);
   line-height: 1.6;
 }
+.speaking-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.speaking-link:hover { text-decoration: underline; }
 
 @media (min-width: 768px) {
   .writing-grid { grid-template-columns: 1fr 1fr; }
@@ -996,6 +1018,24 @@ textarea   { resize: vertical; }
     #2a1040 32%,
     #4e1860 64%,
     #7c2080 100%
+  );
+}
+.coding-bg {
+  background: linear-gradient(
+    135deg,
+    #061820 0%,
+    #0a3040 35%,
+    #0d4a5c 65%,
+    #0e7490 100%
+  );
+}
+.family-bg {
+  background: linear-gradient(
+    135deg,
+    #0a1a0a 0%,
+    #143820 35%,
+    #1a5530 65%,
+    #22d3a0 100%
   );
 }
 
