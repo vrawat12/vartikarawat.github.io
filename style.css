@@ -602,11 +602,8 @@ textarea   { resize: vertical; }
 
 @media (min-width: 768px) {
   .about-grid {
-    grid-template-columns: 200px 1.2fr 1fr;
+    grid-template-columns: 1.4fr 1fr;
     align-items: start;
-  }
-  .about-photo {
-    padding-top: 8px;
   }
 }
 
