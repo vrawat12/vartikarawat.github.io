@@ -510,23 +510,9 @@ textarea   { resize: vertical; }
    ABOUT
    ============================================================ */
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
-}
-
-.about-photo {
   display: flex;
-  justify-content: center;
-}
-.about-photo img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  border: 3px solid var(--accent);
-  box-shadow: 0 0 32px var(--accent-glow);
+  flex-direction: column;
+  gap: 48px;
 }
 
 .about-text p { color: var(--text-muted); margin-bottom: 18px; }
@@ -538,14 +524,15 @@ textarea   { resize: vertical; }
 
 .about-stats {
   display: flex;
-  gap: 36px;
+  gap: 48px;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 40px;
   padding-top: 36px;
   border-top: 1px solid var(--border);
 }
 
-.stat { display: flex; flex-direction: column; }
+.stat { display: flex; flex-direction: column; align-items: center; }
 .stat-number {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 2.25rem;
@@ -580,8 +567,8 @@ textarea   { resize: vertical; }
 }
 
 .expertise-list ul {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 13px;
 }
 .expertise-list li {
@@ -598,14 +585,6 @@ textarea   { resize: vertical; }
   border-radius: 50%;
   background: var(--accent);
   flex-shrink: 0;
-}
-
-@media (min-width: 768px) {
-  .about-grid {
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    align-items: start;
-    gap: 60px;
-  }
 }
 
 
